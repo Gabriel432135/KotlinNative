@@ -28,6 +28,7 @@ kotlin {
         binaries {
             executable {
                 entryPoint = "main"
+                runTask?.standardInput = System.`in`
             }
         }
     }
@@ -37,3 +38,4 @@ kotlin {
     }
 
 }
+
